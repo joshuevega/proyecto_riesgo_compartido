@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Scienza - Servicios</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo_1.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ 
+
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Nova
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="page-services">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="d-flex align-items-center">Scienza</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="servicios.html">Services</a></li>
+          <li><a href="acuerdos.html">Acuerdos</a></li>
+          <!-- <li><a href="team.html">Equipo</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li class="dropdown"><a href="#"><span></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Tratamientos</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Pacientes</a></li>
+              <li><a href="#">Auditores</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contáctanos</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/services-header.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>KPI's</h2>
+        <!-- <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Services</li>
+        </ol> -->
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <section class="section">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pacientes enrolados en acuerdo</h5>
+
+              <!-- Line Chart -->
+              <div id="lineChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart"), {
+                    series: [{
+                      name: "Pacientes",
+                      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                    }],
+                    chart: {
+                      height: 350,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Importe a recuperar</h5>
+
+              <!-- Column Chart -->
+              <div id="columnChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#columnChart"), {
+                    series: [{
+                      name: 'Nota de crédito',
+                      data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+                     }, 
+                    //{
+                    //   name: 'OC a bonificar',
+                    //   data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+                    // }, 
+                    {
+                      name: 'OC a costo especial',
+                      data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 350
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                      },
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      show: true,
+                      width: 2,
+                      colors: ['transparent']
+                    },
+                    xaxis: {
+                      categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep'],
+                    },
+                    yaxis: {
+                      title: {
+                        text: '$ (Millones)'
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+                    },
+                    tooltip: {
+                      y: {
+                        formatter: function(val) {
+                          return "$ " + val + " millones"
+                        }
+                      }
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Column Chart -->
+  
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Monitoreo de auditorías de pacientes</h5>
+
+              <!-- Donut Chart -->
+              <div id="donutChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#donutChart"), {
+                    series: [94, 1, 5],
+                    chart: {
+                      height: 350,
+                      type: 'donut',
+                      toolbar: {
+                        show: true
+                      }
+                    },
+                    labels: ['Pacientes evolucionando favorablemente a tratamiento', 'Paciente no responde a tratamiento', 'Pendientes de auditar'],
+                  }).render();
+                });
+              </script>
+              <!-- End Donut Chart -->
+            </div>
+          </div>
+        </div>
+
+            <!-- Reports -->
+            <div class="col-lg-6">
+              <div class="card">
+                <!-- <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Hoy</a></li>
+                    <li><a class="dropdown-item" href="#">Mes en curso</a></li>
+                    <li><a class="dropdown-item" href="#">Año en curso</a></li>
+                  </ul>
+                </div> -->
+
+                <div class="card-body">
+                  <h5 class="card-title">Días promedio de respuesta para acceder a la terapia</h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Terapia 1',
+                          data: [3, 4, 2.8, 5.1, 4.2, 8.2, 5.6],
+                        }, {
+                          name: 'Terapia 2',
+                          data: [1.1, 3.2, 4.5, 3.2, 3.4, 5.2, 4.1]
+                        }, {
+                          name: 'Terapia 3',
+                          data: [1.5, 1.1, 3.2, 1.8, 9, 2.4, 1.1]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: true
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2023-09-19T00:00:00.000Z", "2023-09-19T01:30:00.000Z", "2023-09-19T02:30:00.000Z", "2023-09-19T03:30:00.000Z", "2023-09-19T04:30:00.000Z", "2023-09-19T05:30:00.000Z", "2023-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Line Chart -->
+
+                </div>
+
+              </div>
+            </div><!-- End Reports -->
+
+        
+        </div>
+      </div>
+    </section>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Scienza</span>
+            </a>
+            <p>Continuamos liderando la transformación de la vida de cada paciente en conjunto con nuestros socios estratégicos.</p>
+            <div class="social-links d-flex  mt-3">
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Links Útiles</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Servicios</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Acuerdos</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Contáctanos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Servicios</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="#">Programa Alentar</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Riesgo Compartido</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Programa de Pacientes</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">KPI's</a></li>
+              <!-- <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Av. Juan de Garay 437 <br>
+              (C1153ABC) - Bs. As. <br>
+              Buenos Aires, Argentina <br><br>
+              <strong>Teléfono:</strong> +549 (011) 5554-7890 <br>
+              Vtas. (011) 4126-7900 <br>
+              Scienza Responde: 0810-222-SCIENZA (7243)
+              <br>
+              <strong>Email:</strong> afiliados@scienza.com.ar<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Scienza Argentina</span></strong> 
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
+          Diseñado por <a href="https://www.scienza.com.ar//">Los atorrantes de Procesos</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer --><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> 
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
